@@ -1,8 +1,10 @@
-array = []
+
 def my_collect(array)
-  element = 0
-  while element < array.length
-  yield
-  element += 1
+  counter = 0
+  new_array = []
+  while counter < array.length
+  yield(array[counter])
+  counter += 1
   end
+  new_array
 end

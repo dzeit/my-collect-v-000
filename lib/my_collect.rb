@@ -1,13 +1,9 @@
 array = []
 def my_collect(array)
-  array.collect do |element|
+  element = 0
+  while element < array.length
   element.upcase
-  end
-end
-
-students = []
-def my_collect(students)
-  students.collect do |name|
-    name.split(" ").first
+  yield
+  element += 1
   end
 end

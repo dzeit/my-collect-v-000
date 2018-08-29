@@ -1,4 +1,5 @@
 array = []
-my_collect(array) do |element|
+def my_collect(array) do |element|
   element.upcase
-end
+  end
+end 

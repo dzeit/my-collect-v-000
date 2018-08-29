@@ -9,5 +9,5 @@ students = []
 def my_collect(students)
   students.collect do |name|
     name.split(" ").first
-  end 
+  end
 end 
